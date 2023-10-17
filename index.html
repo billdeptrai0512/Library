@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="java.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Library</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Libary</h1>
+      <img src="image/logo.png">
+    </div>
+  </header>
+  
+  <!-- A modal dialog containing a form -->
+  <dialog id="favDialog">
+    <p>
+      <label>
+        Add new Book
+        <form>
+          <input type="text" id="title" placeholder="Title" required>
+          <input type="text" id="author" placeholder="Author" required>
+          <input type="number" id="page" placeholder="How many page ?" required>
+          <div class="box">
+            <label for="status">Have u read it ?</label>
+            <input type="checkbox" id="read">
+          </div>
+          <button id="send">Submit</button>
+        </form> 
+      </label>
+
+    </p>
+  </dialog>
+  <main class="book">
+    <div class="btn">
+      <button id="button">+ New Book</button>
+    </div>
+    <div class="book-grid">
+    </div>
+  </main>
+</body>
+</html>
